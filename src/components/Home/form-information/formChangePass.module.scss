@@ -1,0 +1,133 @@
+.ViewchangePass {
+  position: fixed;
+  top: 46%;
+  left: 51.5%;
+  transform: translateX(-50%) translateY(-50%);
+  background: #f1f3f4;
+  width: 39%;
+  height: 375px;
+  z-index: 999;
+  border-radius: 4px;
+  border: 1px solid rgba($color: gray, $alpha: 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .header {
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px solid rgba($color: gray, $alpha: 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    i {
+      font-size: 25px;
+      cursor: pointer;
+    }
+  }
+  .body {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .currentPass {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+
+      label {
+        font-weight: bold;
+        padding-bottom: 6px;
+        i {
+          margin-right: 6px;
+        }
+      }
+      input {
+        width: 300px;
+        height: 30px;
+        background: white;
+        border: 1px solid rgba(black, 0.4);
+        border-radius: 4px;
+        padding-left: 8px;
+      }
+    }
+    .newPass {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+
+      label {
+        font-weight: bold;
+        padding-bottom: 6px;
+        i {
+          margin-right: 6px;
+        }
+      }
+      input {
+        width: 300px;
+        height: 30px;
+        background: white;
+        border: 1px solid rgba(black, 0.4);
+        border-radius: 4px;
+        padding-left: 8px;
+      }
+    }
+    .confirmNewPass {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+
+      label {
+        font-weight: bold;
+        padding-bottom: 6px;
+        i {
+          margin-right: 6px;
+        }
+      }
+      input {
+        width: 300px;
+        height: 30px;
+        background: white;
+        border: 1px solid rgba(black, 0.4);
+        border-radius: 4px;
+        padding-left: 8px;
+      }
+    }
+    .button {
+      display: flex;
+      justify-content: flex-end;
+      .cancel {
+        background: green;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        margin-right: 20px;
+        i {
+          margin-right: 6px;
+        }
+      }
+      .updated {
+        background: rgba(blue, 0.5);
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 5px;
+        color: white;
+        cursor: not-allowed;
+        i {
+          margin-right: 6px;
+        }
+        &.active {
+          background: blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
